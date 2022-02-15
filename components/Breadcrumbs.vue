@@ -1,7 +1,7 @@
 <template>
   <v-breadcrumbs class="breadcrumbs" :items="items">
     <template v-slot:item="{ item }">
-      <v-breadcrumbs-item >
+      <v-breadcrumbs-item>
         <span :style="`color: ${item.color}`">
           {{ item.text }}
         </span>
@@ -15,19 +15,18 @@ export default {
   data: () => ({
     items: [
       {
-        text: "Главная",
+        text: 'Главная',
         disabled: false,
-        color: "black",
+        color: 'black',
       },
       {
-        text: "Кросовки",
+        text: 'Кросовки',
         disabled: false,
-        color: "black",
+        color: 'black',
       },
-     
     ],
   }),
-};
+}
 </script>
 
 
@@ -39,9 +38,6 @@ export default {
   color: #000000;
   padding: 0;
   margin-bottom: 35px;
-  
-}
-.v-breadcrumbs a {
-    color: purple;
+  cursor: pointer;
 }
 </style>

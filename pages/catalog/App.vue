@@ -5,7 +5,9 @@
         <Banner></Banner>
         <Breadcrumbs></Breadcrumbs>
         <TitleCatalog></TitleCatalog>
-        <v-col class="d-flex">
+      </v-container>
+      <v-container class="component-test">
+        <v-col class="d-flex pa-0 justify-space-between" >
           <SideBar></SideBar>
           <Card></Card>
         </v-col>
