@@ -9,7 +9,7 @@
 
 <style scoped lang="scss">
 .banner__image {
-  width: 1624px;
+  width: 100%;
   height: 300px;
   margin-top: 32px;
   margin-bottom: 32px;
