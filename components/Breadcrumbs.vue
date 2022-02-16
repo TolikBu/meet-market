@@ -36,6 +36,7 @@ export default {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  opacity: .3;
   padding: 0;
   margin-bottom: 35px;
   cursor: pointer;
