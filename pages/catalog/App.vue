@@ -9,7 +9,11 @@
       <v-container class="component-test">
         <v-col class="d-flex pa-0 justify-space-between" >
           <SideBar></SideBar>
-          <Card></Card>
+          <div>
+            <Filters></Filters>
+            <FilterClose></FilterClose>
+            <Card></Card>
+          </div>
         </v-col>
       </v-container>
     </v-main>
@@ -17,6 +21,7 @@
 </template>
 
 <script>
+
 </script>
 
 <style scoped lang="scss">

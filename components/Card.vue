@@ -64,7 +64,7 @@ export default {
         id: 3,
         img: 'https://s3-alpha-sig.figma.com/img/84e7/d9a5/ebe574d726b645d552438dfdca13e0ba?Expires=1646006400&Signature=VeU6UrynnpC8aNqpzaT0Jml02x3n-7dJZFRfYuMo-cqG7vwpiT2T2V8F-e0XGWzzqHuLxf08mr37aJbp3K4ZLDV26WHlEiLZ2nkc1ahqzoVYD~RNRiT64sD2k3dCpAbWCJAnH3SfPHL7vH-L9gFLa~ZLn9pdssujnMzOy4TFqlSSvMycAwxXPS3nQmRWq~HPvdCwUsuNnVDestGMeiIk75Y4aekXFJ2b0AyehThVZACSeLgMjKeyEOrWYfpmt-9ZsYvMD0AFiCeRKFMcl8dBZw3EASUH26-mtomIA7uEx4rt-~NT5cIJdgXvEoAzIeSjPGZjuomjU0vieNVeO-tSmg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
         title: '13 566 руб.',
-        description: 'Nike Off White Air VaporMax Flyknit White',
+        description: 'Nike Off White Air VaporMax',
       },
       {
         id: 4,
@@ -91,7 +91,7 @@ export default {
         id: 7,
         img: 'https://s3-alpha-sig.figma.com/img/a05f/9ede/6d35253d629213a0791a96915e03a79b?Expires=1646006400&Signature=K0Lj2mNW914eZxLEEgoC9QnJedjxFZnhyLDMLAAvo~rW0mVLC2DQu-ePb-d~ZQLvMAGJLPFI81uxvBHkr8mdoAXQqNUfSZrSGRZ-S4ZdzxA6~Gldf1e-75lAd2FOZDYqVh5FN1QrLmG0XmP0BOj0JUtsF0gccCpOrHo~es6R7JFmejlmOpzDA0Br0hQmn3iQBm5Qd89ejDU63W-B05ka-ar7ZgED7h4VvjJXJudUFFbtYEo0NnLhO2Z8-peWz6Y9NV1ypUVaIHSvsIIhNHmTfAc3L2vqHVae4dOxlW3S8QYv-eUlNF9hoBq1nSaYZ1RngV~0maTLDyF1teymOxf2qQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
         title: '13 566 руб.',
-        description: 'Nike Off White Air VaporMax Flyknit White',
+        description: 'Nike Off White Air VaporMax',
       },
       {
         id: 8,
@@ -118,7 +118,7 @@ export default {
         id: 11,
         img: 'https://s3-alpha-sig.figma.com/img/84e7/d9a5/ebe574d726b645d552438dfdca13e0ba?Expires=1646006400&Signature=VeU6UrynnpC8aNqpzaT0Jml02x3n-7dJZFRfYuMo-cqG7vwpiT2T2V8F-e0XGWzzqHuLxf08mr37aJbp3K4ZLDV26WHlEiLZ2nkc1ahqzoVYD~RNRiT64sD2k3dCpAbWCJAnH3SfPHL7vH-L9gFLa~ZLn9pdssujnMzOy4TFqlSSvMycAwxXPS3nQmRWq~HPvdCwUsuNnVDestGMeiIk75Y4aekXFJ2b0AyehThVZACSeLgMjKeyEOrWYfpmt-9ZsYvMD0AFiCeRKFMcl8dBZw3EASUH26-mtomIA7uEx4rt-~NT5cIJdgXvEoAzIeSjPGZjuomjU0vieNVeO-tSmg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
         title: '13 566 руб.',
-        description: 'Nike Off White Air VaporMax Flyknit White',
+        description: 'Nike Off White Air VaporMax',
         tags2: '90% рекомендуют',
       },
       {
@@ -146,7 +146,7 @@ export default {
         id: 15,
         img: 'https://s3-alpha-sig.figma.com/img/a05f/9ede/6d35253d629213a0791a96915e03a79b?Expires=1646006400&Signature=K0Lj2mNW914eZxLEEgoC9QnJedjxFZnhyLDMLAAvo~rW0mVLC2DQu-ePb-d~ZQLvMAGJLPFI81uxvBHkr8mdoAXQqNUfSZrSGRZ-S4ZdzxA6~Gldf1e-75lAd2FOZDYqVh5FN1QrLmG0XmP0BOj0JUtsF0gccCpOrHo~es6R7JFmejlmOpzDA0Br0hQmn3iQBm5Qd89ejDU63W-B05ka-ar7ZgED7h4VvjJXJudUFFbtYEo0NnLhO2Z8-peWz6Y9NV1ypUVaIHSvsIIhNHmTfAc3L2vqHVae4dOxlW3S8QYv-eUlNF9hoBq1nSaYZ1RngV~0maTLDyF1teymOxf2qQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
         title: '13 566 руб.',
-        description: 'Nike Off White Air VaporMax Flyknit White',
+        description: 'Nike Off White Air VaporMax',
       },
       {
         id: 16,
@@ -173,7 +173,7 @@ export default {
         id: 19,
         img: 'https://s3-alpha-sig.figma.com/img/84e7/d9a5/ebe574d726b645d552438dfdca13e0ba?Expires=1646006400&Signature=VeU6UrynnpC8aNqpzaT0Jml02x3n-7dJZFRfYuMo-cqG7vwpiT2T2V8F-e0XGWzzqHuLxf08mr37aJbp3K4ZLDV26WHlEiLZ2nkc1ahqzoVYD~RNRiT64sD2k3dCpAbWCJAnH3SfPHL7vH-L9gFLa~ZLn9pdssujnMzOy4TFqlSSvMycAwxXPS3nQmRWq~HPvdCwUsuNnVDestGMeiIk75Y4aekXFJ2b0AyehThVZACSeLgMjKeyEOrWYfpmt-9ZsYvMD0AFiCeRKFMcl8dBZw3EASUH26-mtomIA7uEx4rt-~NT5cIJdgXvEoAzIeSjPGZjuomjU0vieNVeO-tSmg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
         title: '13 566 руб.',
-        description: 'Nike Off White Air VaporMax Flyknit White',
+        description: 'Nike Off White Air VaporMax',
         tags2: '90% рекомендуют',
       },
     ],
@@ -183,11 +183,12 @@ export default {
 
 <style lang="scss">
 .card__container {
-  width: 1248px;
+  max-width: 1248px;
   display: flex;
   flex-wrap: wrap;
   .card__wrap {
-    width: 285px;
+    display: flex;
+    justify-content: end;
     padding: 0;
   }
 }
@@ -247,5 +248,6 @@ export default {
   line-height: 100%;
   background: #ea7373;
   border-radius: 4px;
+  
 }
 </style>

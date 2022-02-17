@@ -17,7 +17,7 @@
 
 <style scoped lang="scss">
 .sidebar {
-  width: 250px;
+  
   &__title {
     font-size: 21px;
     line-height: 150%;
@@ -41,7 +41,7 @@
       content: '';
       width: 22px;
       height: 22px;
-      right: 20px;
+      right: 0;
       background-image: url('~static/img/emoji.svg');
     }
   }
