@@ -1,5 +1,5 @@
 <template>
-  <v-app class="component-app">
+  <v-app id="app" class="component-app">
     <v-main>
       <v-container class="component-test">
         <Banner></Banner>
@@ -10,7 +10,7 @@
         <v-col class="d-flex pa-0 justify-space-between" >
           <SideBar></SideBar>
           <div>
-            <Filters></Filters>
+            <Filter></Filter>
             <FilterClose></FilterClose>
             <Card></Card>
           </div>
