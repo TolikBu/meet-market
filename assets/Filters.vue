@@ -1,12 +1,11 @@
 <template>
-  <div id="app" class="ml-8 mr-3 mb-8">
+  <div class="ml-8 mr-3 mb-8">
     <select v-model="selectedUser" class="app__select" value="По популярности">
       <option value="По популярности">По популярности</option>
       <option v-for="user in users" v-bind:key="user.name">
         {{ $store.state.user.name }}
       </option>
     </select>
-    <span>{{ $store.state.increment }}</span>
   </div>
 </template>
 

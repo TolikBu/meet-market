@@ -2,17 +2,17 @@
   <v-app id="app" class="component-app">
     <v-main>
       <v-container class="component-test">
-        <Banner></Banner>
-        <Breadcrumbs></Breadcrumbs>
-        <TitleCatalog></TitleCatalog>
+        <Banner />
+        <Breadcrumbs />
+        <TitleCatalog />
       </v-container>
       <v-container class="component-test">
         <v-col class="d-flex pa-0 justify-space-between">
-          <SideBar></SideBar>
+          <SideBar />
           <div>
-            <Filter/>
-            <FilterClose></FilterClose>
-            <Card></Card>
+            <FilterSelect />
+            <FilterClose />
+            <Card />
           </div>
         </v-col>
       </v-container>
@@ -21,12 +21,12 @@
 </template>
 
 <script>
-import Filter from "@/components/Filter";
+import FilterSelect from "@/components/FilterSelect";
 
 export default {
   name: "App",
   components: {
-    Filter
+    FilterSelect
   }
 };
 </script>

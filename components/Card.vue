@@ -186,11 +186,11 @@ export default {
   max-width: 1248px;
   display: flex;
   flex-wrap: wrap;
-  .card__wrap {
-    display: flex;
-    justify-content: end;
-    padding: 0;
-  }
+}
+.card__wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
 }
 .card {
   box-sizing: border-box;
@@ -248,6 +248,5 @@ export default {
   line-height: 100%;
   background: #ea7373;
   border-radius: 4px;
-  
 }
 </style>

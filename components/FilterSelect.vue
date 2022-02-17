@@ -1,5 +1,31 @@
 <template>
   <div class="filters">
+    <div class="ml-8 mr-3 mb-8 d-flex align-center">
+      <div
+        class="app__select"
+        value="По популярности"
+        aria-placeholder="По популярности"
+      >
+        По популярности<img
+          src="~/static/img/selecticon.svg"
+          alt=""
+          class="app__select__icon ml-3"
+        />
+      </div>
+    </div>
+    <div class="ml-8 mr-3 mb-8 d-flex align-center">
+      <div
+        class="app__select"
+        value="По популярности"
+        aria-placeholder="По популярности"
+      >
+        По популярности<img
+          src="~/static/img/selecticon.svg"
+          alt=""
+          class="app__select__icon ml-3"
+        />
+      </div>
+    </div>
     <ul class="filters__list">
       <li>
         <select
@@ -9,10 +35,10 @@
           multiple
           v-model="selectedBrands"
         >
-          <option disabled>Brand</option>
-          <option v-for="brand in getAvailableBrandFilter" :key="brand">
+          <div disabled>Brand</div>
+          <div v-for="brand in getAvailableBrandFilter" :key="brand">
             {{ brand }}
-          </option>
+          </div>
         </select>
         <button @click="filterBrand">Применить</button>
       </li>
@@ -59,7 +85,7 @@
 <script>
 import { mapState, mapGetters } from 'vuex'
 export default {
-  name: 'Filter',
+  name: 'FilterSelect',
   data() {
     return {
       selectedBrands: [],
@@ -105,10 +131,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.app__select {
+  background: #000;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 15px 22px;
+  color: #fff;
+}
 .filters {
-  width: 1000px;
-  height: 100px;
+  width: 100%;
+  // height: 50px;
   display: flex;
+  justify-content: space-between;
   &__item {
     width: 190px;
     background: #fff;
@@ -117,9 +151,10 @@ export default {
     padding: 15px 22px;
   }
 }
+
+ul {
+  list-style-type: none;
+}
 </style>
 
 
-// ul {
-//   list-style-type: none;
-// }
