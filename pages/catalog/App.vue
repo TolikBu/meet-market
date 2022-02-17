@@ -7,10 +7,10 @@
         <TitleCatalog></TitleCatalog>
       </v-container>
       <v-container class="component-test">
-        <v-col class="d-flex pa-0 justify-space-between" >
+        <v-col class="d-flex pa-0 justify-space-between">
           <SideBar></SideBar>
           <div>
-            <Filter></Filter>
+            <Filter/>
             <FilterClose></FilterClose>
             <Card></Card>
           </div>
@@ -21,7 +21,14 @@
 </template>
 
 <script>
+import Filter from "@/components/Filter";
 
+export default {
+  name: "App",
+  components: {
+    Filter
+  }
+};
 </script>
 
 <style scoped lang="scss">
