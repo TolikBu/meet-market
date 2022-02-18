@@ -1,83 +1,37 @@
 <template>
   <div class="filters">
-    <div class="ml-8 mr-3 mb-8 d-flex align-center">
+    <div class="filters__block ml-8 mr-3 mb-8">
       <div
-        class="app__select"
-        value="По популярности"
+        class="filters__select"
+        value="Бренд"
         aria-placeholder="По популярности"
       >
-        По популярности<img
-          src="~/static/img/selecticon.svg"
+        Бренд<img
+          src="~/static/img/blackbtn.svg"
           alt=""
           class="app__select__icon ml-3"
         />
       </div>
-    </div>
-    <div class="ml-8 mr-3 mb-8 d-flex align-center">
-      <div
-        class="app__select"
-        value="По популярности"
-        aria-placeholder="По популярности"
-      >
-        По популярности<img
-          src="~/static/img/selecticon.svg"
-          alt=""
-          class="app__select__icon ml-3"
-        />
-      </div>
-    </div>
-    <ul class="filters__list">
-      <li>
-        <select
-          class="filters__item"
+      <div class="filters__list">
+        <div
           id="brand"
           name="brand"
           multiple
-          v-model="selectedBrands"
+          :v-model="selectedBrands"
+          class="filters__list__dinamic"
         >
-          <div disabled>Brand</div>
-          <div v-for="brand in getAvailableBrandFilter" :key="brand">
+          <div
+            v-for="brand in getAvailableBrandFilter"
+            :key="brand"
+            class="filters__list__item"
+          >
+            <input type="checkbox" class="filters__list__checkbox mr-2" />
             {{ brand }}
           </div>
-        </select>
-        <button @click="filterBrand">Применить</button>
-      </li>
-      <hr />
-      <li>
-        <div id="price">
-          <input type="number" v-model="minPrice" /> -
-          <input type="number" v-model="maxPrice" />
+          </div>
         </div>
-        <button @click="filterPrice">Применить</button>
-      </li>
-      <hr />
-      <li>
-        <select name="size" id="size" v-model="selectedSize">
-          <option disabled>Size</option>
-          <option
-            :value="size"
-            v-for="size in getAvailableSizeFilter"
-            :key="size"
-          >
-            {{ size }}
-          </option>
-        </select>
-        <button @click="filterSize">Применить</button>
-      </li>
-    </ul>
-
-    <div class="data">
-      <ul>
-        <li
-          v-for="item in filteredItems"
-          :key="item.id"
-          style="border: 1px solid limegreen"
-        >
-          {{ item.title }} - {{ item.brand }}
-          <br />
-          {{ item.size }} - {{ item.sex }} - {{ item.price }}
-        </li>
-      </ul>
+        <button class="filters__list__btn">Применить</button>
+      </div>
     </div>
   </div>
 </template>
@@ -100,6 +54,7 @@ export default {
       'getAvailableBrandFilter',
       'getAvailablePriceFilter',
       'getAvailableSizeFilter',
+      'getAvailablePieceFilter',
     ]),
     ...mapState(['items']),
   },
@@ -111,6 +66,11 @@ export default {
     filterBrand() {
       this.filteredItems = this.items.filter((item) =>
         this.selectedBrands.includes(item.brand)
+      )
+    },
+    filterPiece() {
+      this.filteredItems = this.items.filter((item) =>
+        this.selectedPiece.includes(item.piece)
       )
     },
     // на вход передается 2 цены - минимальная и максимальная
@@ -129,26 +89,31 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.app__select {
-  background: #000;
-  border: 1px solid white;
-  border-radius: 6px;
-  padding: 15px 22px;
-  color: #fff;
-}
 .filters {
   width: 100%;
-  // height: 50px;
   display: flex;
-  justify-content: space-between;
-  &__item {
+  justify-content: flex-start;
+  &__list {
+    padding: 32px 20px 20px 20px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    background: #fefefe;
+    box-shadow: 0px 8px 40px rgba(52, 59, 117, 0.15);
+    border-radius: 10px;
+    &__item {
+      display: flex;
+    }
+  }
+  &__select {
+    display: flex;
+    justify-content: space-between;
     width: 190px;
-    background: #fff;
-    border: 1px solid black;
+    background: #f3f3f3;
     border-radius: 6px;
     padding: 15px 22px;
+    color: #000;
   }
 }
 

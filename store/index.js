@@ -3,10 +3,11 @@ const state = () => ({
     {
       id: 0,
       name: "Yeezy Boost",
-      brand: "Ash",
+      brand: "Timberland",
       price: 1300,
       size: ["34", "35", "41", "45"],
-      sex: "man"
+      sex: "man",
+      piece: 33
     },
     {
       id: 1,
@@ -14,15 +15,35 @@ const state = () => ({
       brand: "Nike Air",
       price: 2990,
       size: ["34", "41", "45"],
-      sex: "woman"
+      sex: "woman",
+      piece: 22
     },
     {
       id: 2,
       name: "Nike run winter+",
-      brand: "Nike Air",
+      brand: "Nike",
       price: 2190,
       size: ["34", "42", "43", "45"],
-      sex: "unisex"
+      sex: "unisex",
+      piece: 23
+    },
+    {
+      id: 3,
+      name: "Nike run winter+",
+      brand: "Adidas",
+      price: 2190,
+      size: ["34", "42", "43", "45"],
+      sex: "unisex",
+      piece: 77
+    },
+    {
+      id: 4,
+      name: "Nike run winter+",
+      brand: "Puma",
+      price: 2190,
+      size: ["34", "42", "43", "45"],
+      sex: "unisex",
+      piece: 63
     }
   ],
   
@@ -31,6 +52,8 @@ const state = () => ({
 const getters = {
   getAvailableBrandFilter: (state) =>
     new Set(state.items.map((item) => item.brand)),
+  getAvailablePieceFilter: (state) =>
+    new Set(state.items.map((item) => item.piece)),
   getAvailablePriceFilter: (state) => ({
     minPrice: Math.min(...state.items.map((item) => item.price)),
     maxPrice: Math.max(...state.items.map((item) => item.price))
