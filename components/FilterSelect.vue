@@ -1,7 +1,7 @@
 <template>
-  <di class="filters">
+  <div class="filters">
     <div class="filters__block ml-8 mr-3 mb-8">
-      <div class="filters__select" value="Бренд" v-on:click="toggleShow">
+      <div class="filters__select" value="Бренд" v-on:click="toggleShow($event)" >
         Бренд<img
           src="~/static/img/blackbtn.svg"
           alt=""
@@ -46,149 +46,8 @@
         <button class="filters__listitem__btn">Применить</button>
       </div>
     </div>
-    <div class="filters__block ml-4 mr-3 mb-8">
-      <div
-        class="filters__select"
-        value="По популярности"
-        v-on:click="toggleShow"
-      >
-        По популярности<img
-          src="~/static/img/blackbtn.svg"
-          alt=""
-          class="app__select__icon ml-3"
-        />
-      </div>
-      <div
-        class="filters__list"
-        v-bind:class="{ active: isActive, filters__list: hasError }"
-      >
-        <div class="filters__check">
-          <span class="filters__check__text">Выбрано:</span>
-          <button class="filters__check__btn">Очистить</button>
-        </div>
-        <div class="filters__listitem">
-          <div
-            id="brand"
-            name="brand"
-            multiple
-            :v-model="selectedBrands"
-            class="filters__listitem__dinamic"
-          >
-            <div
-              v-for="brand in getAvailableBrandFilter"
-              :key="brand"
-              class="filters__listitem__item"
-            >
-              <input type="checkbox" class="filters__list__checkbox mr-2" />
-              {{ brand }}
-            </div>
-          </div>
-          <div>
-            <div
-              v-for="piece in getAvailablePieceFilter"
-              :key="piece"
-              class="filters__listitem__text"
-            >
-              {{ piece }}
-            </div>
-          </div>
-        </div>
-        <button class="filters__listitem__btn">Применить</button>
-      </div>
-    </div>
-    <div class="filters__block ml-4 mr-3 mb-8">
-      <div class="filters__select" value="Бренд" v-on:click="toggleShow">
-        Модель<img
-          src="~/static/img/blackbtn.svg"
-          alt=""
-          class="app__select__icon ml-3"
-        />
-      </div>
-      <div
-        class="filters__list"
-        v-bind:class="{ active: isActive, filters__list: hasError }"
-      >
-        <div class="filters__check">
-          <span class="filters__check__text">Выбрано:</span>
-          <button class="filters__check__btn">Очистить</button>
-        </div>
-        <div class="filters__listitem">
-          <div
-            id="brand"
-            name="brand"
-            multiple
-            :v-model="selectedBrands"
-            class="filters__listitem__dinamic"
-          >
-            <div
-              v-for="brand in getAvailableBrandFilter"
-              :key="brand"
-              class="filters__listitem__item"
-            >
-              <input type="checkbox" class="filters__list__checkbox mr-2" />
-              {{ brand }}
-            </div>
-          </div>
-          <div>
-            <div
-              v-for="piece in getAvailablePieceFilter"
-              :key="piece"
-              class="filters__listitem__text"
-            >
-              {{ piece }}
-            </div>
-          </div>
-        </div>
-        <button class="filters__listitem__btn">Применить</button>
-      </div>
-    </div>
-    <div class="filters__block ml-4 mr-3 mb-8">
-      <div class="filters__select" value="Бренд" v-on:click="toggleShow">
-        Стоимость<img
-          src="~/static/img/blackbtn.svg"
-          alt=""
-          class="app__select__icon ml-3"
-        />
-      </div>
-      <div
-        class="filters__list"
-        v-bind:class="{ active: isActive, filters__list: hasError }"
-      >
-        <div class="filters__check">
-          <span class="filters__check__text">Выбрано:</span>
-          <button class="filters__check__btn">Очистить</button>
-        </div>
-        <div class="filters__listitem">
-          <div
-            id="brand"
-            name="brand"
-            multiple
-            :v-model="selectedBrands"
-            class="filters__listitem__dinamic"
-          >
-            <div
-              v-for="brand in getAvailableBrandFilter"
-              :key="brand"
-              class="filters__listitem__item"
-            >
-              <input type="checkbox" class="filters__list__checkbox mr-2" />
-              {{ brand }}
-            </div>
-          </div>
-          <div>
-            <div
-              v-for="piece in getAvailablePieceFilter"
-              :key="piece"
-              class="filters__listitem__text"
-            >
-              {{ piece }}
-            </div>
-          </div>
-        </div>
-        <button class="filters__listitem__btn">Применить</button>
-      </div>
-    </div>
-  </di>
+    
+  </div>
 </template>
 
 <script>
@@ -243,7 +102,6 @@ export default {
       )
     },
     toggleShow() {
-      this.hasError = !this.hasError
       this.isActive = !this.isActive
     },
   },
