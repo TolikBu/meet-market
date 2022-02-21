@@ -1,34 +1,13 @@
 <template>
-  <v-app id="app" class="component-app">
-    <v-main>
-      <v-container class="component-test">
-        <Banner />
-        <Breadcrumbs />
-        <TitleCatalog />
-      </v-container>
-      <v-container class="component-test">
-        <v-col class="d-flex pa-0 justify-space-between">
-          <SideBar />
-          <div>
-            <FilterSelect />
-            <FilterClose />
-            <Card />
-          </div>
-        </v-col>
-      </v-container>
-    </v-main>
-  </v-app>
+  <v-main>
+    <h1>Домашняя страница</h1>
+    <NuxtLink to="/catalog/test/app">
+      Нажать для перехода в каталог
+    </NuxtLink>
+  </v-main>
 </template>
 
 <script>
-import FilterSelect from "@/components/FilterSelect";
-
-export default {
-  name: "App",
-  components: {
-    FilterSelect
-  }
-};
 </script>
 
 <style scoped lang="scss">
